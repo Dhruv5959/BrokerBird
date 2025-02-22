@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ad Exchange Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #8849ed; /* Faint violet color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      #category-btn {
+        background: white;
+        border: none;
+        color: #5f6368;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .search-container {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+      }
+      #search-bar {
+        padding: 10px;
+        width: 500px;
+        border: 1px solid #dadce0;
+        border-radius: 24px;
+        outline: none;
+      }
+      #search-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: -40px;
+        color: #5f6368;
+      }
+      #profile-container button {
+        background: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        color: #1a73e8;
+        border-radius: 5px;
+      }
+      #category-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 30px;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        width: 200px;
+      }
+      #category-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      #category-menu ul li {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      #category-menu ul li:hover {
+        background: #f1f3f4;
+      }
+      #company-profile {
+        display: none;
+        margin-top: 100px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        text-align: center;
+      }
+      #company-profile img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      #company-profile h2 {
+        margin: 10px 0;
+        font-size: 24px;
+      }
+      #company-profile p {
+        color: #5f6368;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const categoryBtn = document.getElementById("category-btn");
+        const categoryMenu = document.getElementById("category-menu");
+        const searchBtn = document.getElementById("search-btn");
+        const searchBar = document.getElementById("search-bar");
+        const companyProfile = document.getElementById("company-profile");
+        const companyName = "Temple Run"; // Replace with actual company name
+
+        categoryBtn.addEventListener("click", function () {
+          categoryMenu.style.display =
+            categoryMenu.style.display === "block" ? "none" : "block";
+        });
+
+        searchBtn.addEventListener("click", function () {
+          const searchText = searchBar.value.trim().toLowerCase();
+          if (searchText === companyName.toLowerCase()) {
+            companyProfile.style.display = "block";
+          } else {
+            companyProfile.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <button id="category-btn">☰ Categories</button>
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search companies..." />
+        <button id="search-btn">🔍</button>
+      </div>
+      <div id="profile-container">
+        <button id="login-btn">Login / Sign Up</button>
+      </div>
+    </header>
+
+    <div id="category-menu" class="hidden">
+      <ul>
+        <li>Technology</li>
+        <li>Finance</li>
+        <li>Healthcare</li>
+        <li>Retail</li>
+        <li>Education</li>
+      </ul>
+    </div>
+
+    <div id="company-profile">
+      
+      <h2>Temple Run</h2>
+      <p>Entertainment</p>
+      <p>Location: New York, USA</p>
+      <p>Description: Mobile Video Game</p>
+    </div>
+  </body>
+</html>
