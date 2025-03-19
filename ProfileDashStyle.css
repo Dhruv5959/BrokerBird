@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #6b46c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.dashboard {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #6b46c1;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #6b46c1;
+}
+
+.role {
+  color: #6b46c1;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.stat-card {
+  background: #eef2ff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+}
+
+.stat-card h4 {
+  font-size: 14px;
+  color: #6b46c1;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6b46c1;
+}
+
+/* Contact Section */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info h3 {
+  color: #6b46c1;
+}
+
+.contact-info p {
+  color: #6b46c1;
+  font-size: 14px;
+}
+
+.quick-actions {
+  margin-top: 20px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.primary {
+  background: #6b46c1;
+  color: white;
+}
+
+.secondary {
+  background: #f4f4f4;
+  color: #6b46c1;
+  border: 1px solid #ccc;
+}
+.chart-container {
+  margin-top: 20px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.chart-container h3 {
+  color: #6b46c1;
+}
+
+.back-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #6b46c1;
+  background: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+  background: #e2e8f0;
+  transform: scale(1.05);
+}
+
+.age {
+  color: #6b46c1;
+}

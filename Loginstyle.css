@@ -7,10 +7,8 @@
   align-items: center;
     font-size: 14px;
     font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
-    /*background:  url(https://github.com/amaury-diallo/pure-javascript-todolist-app/blob/master/blue-bg.svg) no-repeat center; */
-  background: #9D50BB;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #6b46c1; 
+background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  
  z-index: 0;
 }
 
@@ -133,14 +131,22 @@ background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, F
 }
 
 .btn-submit {
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 20px;
-    text-transform: uppercase;
-    color: #212529;
-    font-weight: bold;
-    background-color: #809BE0;
-}
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    color: white; 
+    background-color: #6b46c1; 
+    padding: 1px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
 
 .btn-submit:hover {
     color: #212529;

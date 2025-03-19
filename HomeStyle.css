@@ -9,7 +9,7 @@ body {
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the BrokerBird text */
   align-items: center;
   padding: 15px 50px;
   background: white;
@@ -21,14 +21,16 @@ body {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #000000;
+  color:  #6b46c1;
 }
 
 .nav-links {
+  position: absolute;
+  right: 20px; /* Move to the right */
   display: flex;
-  gap: 20px;
-  align-items: center;
+  gap: 15px;
 }
+
 
 .nav-links a {
   text-decoration: none;
@@ -37,15 +39,15 @@ body {
 }
 
 .nav-links .sign-in {
-  color: #2563eb;
+  color: #6b46c1;
   padding: 8px 16px;
   border-radius: 20px;
-  border: 2px solid #2563eb;
+  border: 2px solid#6b46c1;
 }
 
 .nav-links .sign-up {
   color: white;
-  background: #2563eb;
+  background:  #6b46c1;
   padding: 10px 20px;
   border-radius: 20px;
 }
@@ -99,7 +101,7 @@ body {
 
 .subtitle {
   font-size: 20px;
-  color: #4a5568;
+  color: #6b46c1;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -119,13 +121,13 @@ body {
 
 .text-section h1 {
   font-size: 36px;
-  color: #2d3748;
+  color: #6b46c1;
   margin-bottom: 20px;
 }
 
 .text-section p {
   font-size: 18px;
-  color: #4a5568;
+  color: #6b46c1;
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -157,19 +159,19 @@ body {
 
 .feature-card h3 {
   font-size: 20px;
-  color: #2d3748;
+  color: #6b46c1;
   margin-bottom: 15px;
 }
 
 .feature-card p {
   font-size: 16px;
-  color: #4a5568;
+  color: #6b46c1;
   line-height: 1.6;
   margin-bottom: 15px;
 }
 
 .feature-card a {
-  color: #2563eb;
+  color: #6b46c1;
   font-weight: 500;
   text-decoration: none;
   display: inline-block;
@@ -177,7 +179,7 @@ body {
 }
 
 .learn-btn {
-  background: #2563eb;
+  background: #6b46c1;
   color: white;
   padding: 12px 30px;
   border: none;
@@ -213,7 +215,7 @@ body {
 }
 
 .footer-section p {
-  color: #9ca3af;
+  color:  #9ca3af;
   line-height: 1.6;
 }
 
@@ -282,4 +284,15 @@ body {
   .features {
       grid-template-columns: 1fr;
   }
+}
+.profile-icon {
+  position: absolute;
+  left: 20px; /* Position it on the left */
+  font-size: 30px;
+  color: #6b46c1;
+  text-decoration: none;
+}
+
+.profile-icon:hover {
+  color:#2563eb;
 }
